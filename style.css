@@ -1,7 +1,53 @@
 .heading{
     font-family: Montserrat;
+    text-align: center;
+    padding-top: 5%;
 }
 
 .text {
     font-family: Nunito Sans;
+    margin: 5%;
 }
+
+.navbar {
+  background-color: aqua;
+}
+
+.nav-item {
+    padding-left: 4%;
+    padding-right: 8%; 
+}
+
+.navbar-nav {
+    padding-right: 35%;
+}
+
+.container {
+    position: relative;
+  }
+  
+  /* Bottom right text */
+  .text-block {
+    position: absolute;
+    top: 40%;
+    right: 10%;
+    color: black;
+    padding-left: 60%;
+  }
+
+  .button {
+    background-color: #10c9c3;
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: rgb(8, 184, 190);
+  }
+  
+ 

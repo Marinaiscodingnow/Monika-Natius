@@ -1,3 +1,7 @@
+.nav-link:hover {
+  color: #10c9c3;
+}
+
 .heading{
     font-family: Nunito Sans;
     text-align: center;
@@ -21,6 +25,7 @@
 .navbar-nav {
     padding-right: 35%;
 }
+
 
 .container {
     position: relative;
@@ -156,3 +161,4 @@ input[type=submit]:hover {
   font-family: Montserrat;
   color: white;
 }
+

@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Monika Natius</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="scipt.js" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">   
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav style="background-color: rgba(214, 217, 223, 0.596);" class="navbar navbar-expand">
+        <div class="container-fluid">
+
+          <a class="navbar-brand" href="#">
+            <img src="images/logos/brand-logo.png"  style="margin-left: 50% ;" alt="Bootstrap" width="30" height="24">
+          </a>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" style="color: #10c9c3;"href="gallery.html">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <br>
+      <br>
+
+      <h1 style="text-align: center;">Stationary</h1>
+      <h6 style="text-align: center;">Click on the Gallery photos to expand them.</h6>
+      <h6 style="text-align: center;">Please check out Little Dove Design for more gorgeous Stationary!</h6>
+
+
+
+
+<br>
+<br>
+<br>
+<div class="row" style="padding: 5%;">
+  <div class="col">
+    <img src="stationary/Milestone_1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" style="width:100%;max-width:300px">
+  </div>
+  <div class="col">
+    <img src="stationary/Milestone_4.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow" style="width:100%;max-width:300px">
+  </div>
+  <div class="col">
+    <img src="stationary/mintbaby.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow" style="width:100%;max-width:300px">
+  </div>
+  <div class="col">
+    <img src="stationary/cherryBlossom.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow" style="width:100%;max-width:300px">
+  </div>
+</div>
+
+
+<br>
+<br>
+<br>
+
+<div class="row" style="padding: 5%;">
+  <div class="col">
+    <img src="stationary/Elements_1.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow" style="width:100%;max-width:300px">
+  </div>
+  <div class="col">
+    <img src="stationary/Elements_2.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow" style="width:100%;max-width:300px">
+  </div>
+  <div class="col">
+    <img src="stationary/gold.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow" style="width:100%;max-width:300px">
+  </div>
+  <div class="col">
+    <img src="stationary/blue&orange.JPG" onclick="openModal();currentSlide(8)" class="hover-shadow" style="width:100%;max-width:300px">
+  </div>
+</div>
+
+
+<br>
+<br>
+<br>
+
+<div class="row" style="padding: 5%;">
+  <div class="col">
+    <img src="stationary/lamb.jpg" onclick="openModal();currentSlide(9)" class="hover-shadow" style="width:100%;max-width:300px">
+  </div>
+  <div class="col">
+    <img src="stationary/letterpress.jpg" onclick="openModal();currentSlide(10)" class="hover-shadow" style="width:100%;max-width:300px">
+  </div>
+  <div class="col">
+    <img src="stationary/mel.jpg" onclick="openModal();currentSlide(11)" class="hover-shadow" style="width:100%;max-width:300px">
+  </div>
+  <div class="col">
+    <img src="stationary/mel2.jpg" onclick="openModal();currentSlide(12)" class="hover-shadow" style="width:100%;max-width:300px">
+  </div>
+</div>
+
+<br>
+<br>
+<br>
+
+<div class="row" style="padding: 5%;">
+  <div class="col">
+    <img src="stationary/winter.jpg" onclick="openModal();currentSlide(13)" class="hover-shadow" style="width:100%;max-width:300px">
+  </div>
+  <div class="col">
+    <img src="stationary/pinkbaby.jpeg" onclick="openModal();currentSlide(14)" class="hover-shadow" style="width:100%;max-width:300px">
+  </div>
+  <div class="col">
+    <img src="stationary/woodland.jpg" onclick="openModal();currentSlide(15)" class="hover-shadow" style="width:100%;max-width:300px">
+  </div>
+  <div class="col">
+    <img src="stationary/christmas.jpg" onclick="openModal();currentSlide(16)" class="hover-shadow" style="width:100%;max-width:300px">
+  </div>
+</div>
+
+<br>
+<br>
+<br>
+
+
+
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 16</div>
+      <img src="stationary/Milestone_1.jpg" style="width:100%; ">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 16</div>
+      <img src="stationary/Milestone_4.jpg" style="width:100%;">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 16</div>
+      <img src="stationary/mintbaby.jpg" style="width:100%;">
+    </div>
+
+    <div class="mySlides" style="padding: 15%;">
+      <div class="numbertext">4 / 16</div>
+      <img src="stationary/cherryBlossom.jpg" style="width:100%;">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">5 / 16</div>
+      <img src="stationary/Elements_1.jpg" style="width:100%; ">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">6 / 16</div>
+      <img src="stationary/Elements_2.jpg" style="width:100%;">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">7 / 16</div>
+      <img src="stationary/gold.jpg" style="width:100%;">
+    </div>
+
+    <div class="mySlides" style="padding: 15%;">
+      <div class="numbertext">8 / 16</div>
+      <img src="stationary/blue&orange.JPG" style="width:100%;">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">9 / 16</div>
+      <img src="stationary/lamb.jpg" style="width:100%; ">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">10 / 16</div>
+      <img src="stationary/letterpress.jpg" style="width:100%;">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">11 / 16</div>
+      <img src="stationary/mel.jpg" style="width:100%;">
+    </div>
+
+    <div class="mySlides" style="padding: 15%;">
+      <div class="numbertext">12 / 16</div>
+      <img src="stationary/mel2.jpg" style="width:100%;">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">13 / 16</div>
+      <img src="stationary/winter.jpg" style="width:100%; ">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">14 / 16</div>
+      <img src="stationary/pinkbaby.jpeg" style="width:100%;">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">15 / 16</div>
+      <img src="stationary/woodland.jpg" style="width:100%;">
+    </div>
+
+    <div class="mySlides" style="padding: 15%;">
+      <div class="numbertext">16 / 16</div>
+      <img src="stationary/christmas.jpg" style="width:100%;">
+    </div>
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+</div>
+
+    
+      <div style="background-color: #141414; padding: 5%;" class="row">
+    <div style="padding: 5%;" class="col">
+      <h4 class="footer">Monika Natius </h4>
+      <p class="footer">
+        Designed by Marina Kania.</p>
+    </div>
+    <div style="padding: 5%;" class="col">
+      <a href ="mailto:monikanatius@gmail.com">monikanatius@gmail.com</a>
+      <p class="footer">
+        201 370 3376
+        </p>
+    </div>
+    <div style="padding: 5%;" class="col">
+      <div class="row">
+        <div class="col">
+          <div class="footer">
+            <p href = "about.html">About</p>
+            <p href = "gallery.html">Gallery</p>
+            <p href="contact.html">Contact</p>
+            
+          </div>
+        </div>
+
+        <div class="col">
+
+          <div class="footer">
+            <p href="?">Instagram</p>
+            <p href="?">Facebook</p>
+            <p href="?">LinkedIn</p>
+          </div>
+        </div>
+
+    </div>
+</div>
+
+  </div>
+  <script src="scipt.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </body>
+</html>
